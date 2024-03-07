@@ -1,0 +1,9 @@
+<div class="card p-3 text-center">
+<h1><%=@flat.name%></h1>
+<h3><%=@flat.address%></h3>
+<%= @flat.price_per_night %><i class="fa-solid fa-euro-sign"></i><p>Per night</p>
+<%= @flat.number_of_guests %><i class="fa-solid fa-people-roof"></i><p>Guests</p>
+<ul class="list-unstyled">
+<li><%= link_to "Edit this flat", edit_flat_path, class:"btn btn-primary" %></li>
+<li>-------------</li>
+<li><%= link_to "Back to list", flats_path, class:"btn btn-dark" %></li>
